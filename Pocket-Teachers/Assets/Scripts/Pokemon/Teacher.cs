@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pokemon
+public class Teacher
 {
-    PokemonBase _base;
+    TeacherBase _base;
     int level;
 
-    public Pokemon(PokemonBase pBase, int pLevel)
+    public Teacher(TeacherBase pBase, int pLevel)
     {
         _base = pBase;
         level = pLevel;

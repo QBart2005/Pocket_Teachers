@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Pokemon", menuName = "Pokemon/Create new pokemon")]
+[CreateAssetMenu(fileName = "Teachers", menuName = "Teachers/Create new Teacher")]
 
-public class PokemonBase : ScriptableObject
+public class TeacherBase : ScriptableObject
 {
     [SerializeField] string name;
 
@@ -14,8 +14,8 @@ public class PokemonBase : ScriptableObject
     [SerializeField] Sprite frontSprite;
     [SerializeField] Sprite backSprite;
 
-    [SerializeField] PokemonType type1;
-    [SerializeField] PokemonType type2;
+    [SerializeField] TeacherType type1;
+    [SerializeField] TeacherType type2;
 
     //Base Stats
     [SerializeField] int maxHP;
@@ -41,11 +41,11 @@ public class PokemonBase : ScriptableObject
     {
         get { return backSprite; }
     }
-    public PokemonType Type1 
+    public TeacherType Type1 
     {
         get { return type1; }
     }
-    public PokemonType Type2 
+    public TeacherType Type2 
     {
         get { return type2; }
     }
@@ -75,7 +75,7 @@ public class PokemonBase : ScriptableObject
     }
 }
 
-public enum PokemonType
+public enum TeacherType
 {
     None,
     Dutch,

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41c00705aadc8498795944e693b9a174, type: 3}
-  m_Name: Charmander
+  m_Name: Teachers
   m_EditorClassIdentifier: 
-  name: Charmander
+  name: Stefan den Braber
   description: 
-  frontSprite: {fileID: 21300000, guid: cd259d9d4f8ba2749a16d1cc64d46bec, type: 3}
-  backSprite: {fileID: 21300000, guid: ed8e1d9976a1fd94d961840d8f6e7764, type: 3}
+  frontSprite: {fileID: 21300000, guid: 0f37bf3cf5680a64d863b5f155b2a597, type: 3}
+  backSprite: {fileID: 21300000, guid: aacaae602a38f884ab9e02e43de3736d, type: 3}
   type1: 2
   type2: 0
-  maxHP: 39
-  attack: 52
-  defense: 43
-  spAttack: 60
-  spDefense: 50
-  speed: 65
+  maxHP: 45
+  attack: 48
+  defense: 48
+  spAttack: 65
+  spDefense: 65
+  speed: 40
