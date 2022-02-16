@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if(!isMoving)
-        {
+        {   
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
@@ -28,11 +28,13 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("moveY", input.y);
 
                 var targetPos = transform.position;
-                targetPos.x += input.x * 0.2f;
-                targetPos.y += input.y * 0.2f;
+                targetPos.x += input.x;
+                targetPos.y += input.y;
 
                 if(IsWalkable(targetPos))
+                {
                     StartCoroutine(Move(targetPos));
+                }
             }
         }
 
@@ -56,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
     public bool IsWalkable(Vector3 targetPos)
     {
-        if(Physics2D.OverlapCircle(targetPos, 0.3f, ObjectsLayer) != null)
+        if(Physics2D.OverlapCircle(targetPos, 0.2f, ObjectsLayer) != null)
         {
             return false;
         }

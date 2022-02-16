@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41c00705aadc8498795944e693b9a174, type: 3}
-  m_Name: Teachers
+  m_Name: Stefan
   m_EditorClassIdentifier: 
   name: Stefan den Braber
   description: 
@@ -24,3 +24,10 @@ MonoBehaviour:
   spAttack: 65
   spDefense: 65
   speed: 40
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: faaa7c1989243433ab993b0dc0259a10, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 387581f9f2e2e4f46a46cfd843a6a2db, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: bf1b38e1fe152424d9dba1d8cc9a6bda, type: 2}
+    level: 11

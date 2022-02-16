@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class Teacher
 {
-    TeacherBase _base;
-    int level;
+    public TeacherBase _base { get; set; }
+    public int level { get; set; }
+
+    public int HP { get; set; }
+    public List<Move> Moves { get; set; }
 
     public Teacher(TeacherBase pBase, int pLevel)
     {
         _base = pBase;
         level = pLevel;
+        HP = _base.MaxHP;
+
+        //Generate Moves
+        Moves = new List<Move>();
+        foreach (var move in _base.LearnableMoves)
+        {
+            if (move.Level <= level)
+                Moves.Add(new Move(move.Base));
+
+            if (Moves.Count >= 4)
+                break;
+        }
     }
 
     public int Attack
